@@ -350,10 +350,10 @@ body {padding-left:0px!important;padding-right:0px!important;}
 <p>按照<a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">此处</a>&nbsp;说明安装&nbsp;git（如果你未安装）&nbsp;请注意，&nbsp;这些教程只能在命令行上使用。虽然有一些不错的git GUIS（图形用户界面）,我认为先使用git特定的命令来学习git会更容易，然后在熟悉了该命令之后再尝试使用git GUI。&nbsp;</p>
 <p>一旦你对那些命令熟悉了，就可以尝试&nbsp;<a href="https://github.com/join" target="_blank">这里的</a>. &nbsp;git GUIS(账户的公共仓库是免费的。但是私人仓库是付费的)</p>
 <p>&nbsp;</p>
-<h3>步骤1： Create a&nbsp;local git repository&nbsp;</h3>
-<p>When creating a new project on your local machine using git, you'll first create a new&nbsp;<strong><a href="https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository" target="_blank">repository</a>&nbsp;</strong>(or often, '<strong>repo</strong>', for short).&nbsp;</p>
-<p>To use git we'll be using the terminal. If you don't have much experience with the terminal and basic commands, check out <a href="http://mac.appstorm.net/how-to/utilities-how-to/how-to-use-terminal-the-basics/" target="_blank">this tutorial</a>&nbsp;(especially the 'Navigating the Filesystem' and 'Moving Around' sections).</p>
-<p>To begin, open up a terminal and move to where you want to place the project on your local machine using the <code>cd</code> (change directory) command. For example,&nbsp;if you have a 'projects' folder on your desktop, you'd do something like:</p>
+<h3>步骤1： 创建本地git存储库&nbsp;</h3>
+<p>使用git在本地机器上创建新项目时，首先要创建一个新&nbsp;<strong><a href="https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository" target="_blank">存储库</a>&nbsp;</strong>(或者通常是'<strong>repo</strong>').&nbsp;</p>
+<p>要使用git，我们将使用终端。如果您对终端和基本命令没有太多经验，请查看 <a href="http://mac.appstorm.net/how-to/utilities-how-to/how-to-use-terminal-the-basics/" target="_blank">本教程</a>&nbsp;(尤其是“导航文件系统”和“移动”部分).</p>
+<p>首先，打开终端并使用<code>cd</code> (更改目录) 命令移动到要将项目放置在本地计算机上的位置.例如，如果桌面上有“项目”文件夹，则可以执行以下操作：</p>
 <p>
 <script src="./An Intro to Git and GitHub for Beginners (Tutorial)_files/67a84eb876984f0b5785.js.下载"></script><link rel="stylesheet" href="./An Intro to Git and GitHub for Beginners (Tutorial)_files/gist-embed-4ac6018bcc05457cde2f66d2e7299d11.css"></p><div id="gist26245466" class="gist">
 
@@ -383,7 +383,7 @@ mnelson:Desktop mnelson$ <span class="pl-c1">cd</span> myproject/</pre></div>
 
 <p></p>
 <p>&nbsp;</p>
-<p>To initialize a git repository in the root of the&nbsp;folder, run the <span style="font-family: &#39;courier new&#39;, courier;"><strong><a href="http://git-scm.com/docs/git-init" target="_blank">git init</a>&nbsp;</strong><span style="font-family: arial, helvetica, sans-serif;">command:</span></span>&nbsp;&nbsp;</p>
+<p>要在文件夹的根目录中初始化git存储库，请运行 <span style="font-family: &#39;courier new&#39;, courier;"><strong><a href="http://git-scm.com/docs/git-init" target="_blank">git init</a>&nbsp;</strong><span style="font-family: arial, helvetica, sans-serif;">命令:</span></span>&nbsp;&nbsp;</p>
 <script src="./An Intro to Git and GitHub for Beginners (Tutorial)_files/89793ba1bc947f64658e.js.下载"></script><link rel="stylesheet" href="./An Intro to Git and GitHub for Beginners (Tutorial)_files/gist-embed-4ac6018bcc05457cde2f66d2e7299d11.css"><div id="gist26245638" class="gist">
     <div class="gist-file">
       <div class="gist-data">
@@ -409,9 +409,9 @@ Initialized empty Git repository <span class="pl-k">in</span> /Users/mnelson/Des
 </div>
 
 <h3>&nbsp;</h3>
-<h3><a id="user-content-step-4-adding-a-new-file-to-the-repo" class="anchor" href="https://github.com/cubeton/git101/blob/master/TurtorialInfo/Tutorial.md#step-4-adding-a-new-file-to-the-repo" aria-hidden="true"></a>Step 2: Add a new file to the repo</h3>
-<p>Go ahead and add a new file to the project, using any text editor you like or running a<span style="font-family: &#39;courier new&#39;, courier;">&nbsp;<a href="http://linux.die.net/man/1/touch" target="_blank">touch</a></span> command.</p>
-<p>Once you've added or modified files in a folder containing&nbsp;a git repo, git will notice that changes have been made inside the repo. But,&nbsp;git won't officially keep track of the file (that is, put it in a commit - we'll talk more about commits next) unless you explicitly tell it to.</p>
+<h3><a id="user-content-step-4-adding-a-new-file-to-the-repo" class="anchor" href="https://github.com/cubeton/git101/blob/master/TurtorialInfo/Tutorial.md#step-4-adding-a-new-file-to-the-repo" aria-hidden="true"></a>步骤2: 向repo添加新文件</h3>
+<p>继续使用你喜欢的任何文本编辑器或运行<span style="font-family: &#39;courier new&#39;, courier;">&nbsp;<a href="http://linux.die.net/man/1/touch" target="_blank">touch</a></span> 命令将新文件添加到项目中.</p>
+<p>一旦你在包含git repo的文件夹中添加或修改了文件，git就会发现在repo中已经进行了更改。但是，git不会正式跟踪文件（也就是说，将其置于提交中-我们将在下面详细讨论提交），除非你明确告诉它。</p>
 <p>
 <script src="./An Intro to Git and GitHub for Beginners (Tutorial)_files/2d8f224bede4c2dde86b.js.下载"></script><link rel="stylesheet" href="./An Intro to Git and GitHub for Beginners (Tutorial)_files/gist-embed-4ac6018bcc05457cde2f66d2e7299d11.css"></p><div id="gist26245712" class="gist">
     <div class="gist-file">
@@ -440,7 +440,7 @@ mnelson.txt</pre></div>
 
 <p></p>
 <p>&nbsp;</p>
-<p>After creating the new file, you can use the <a href="http://git-scm.com/docs/git-status" target="_blank"><strong><code>git status</code></strong></a> command to see which files git knows exist.</p>
+<p>创建新文件后，你可以使用该 <a href="http://git-scm.com/docs/git-status" target="_blank"><strong><code>git status</code></strong></a> 命令查看git知道哪些文件存在。</p>
 <p>
 <script src="./An Intro to Git and GitHub for Beginners (Tutorial)_files/02e849bbffcbea1e9a61.js.下载"></script><link rel="stylesheet" href="./An Intro to Git and GitHub for Beginners (Tutorial)_files/gist-embed-4ac6018bcc05457cde2f66d2e7299d11.css"></p><div id="gist26245727" class="gist">
     <div class="gist-file">
@@ -476,16 +476,16 @@ nothing added to commit but untracked files present (use <span class="pl-s"><spa
 </div>
 
 <p></p>
-<p>What this basically says is, "Hey, we noticed you created a new file called mnelson.txt, but unless you use the '<code>git add' </code>command we aren't going to do anything with it."</p>
+<p>这基本上是说, "嘿, 我们注意到你创建了一个名为mnelson.txt的新文件，但除非你使用'<code>git add' </code>命令，否则我们不会对它做任何事情。"</p>
 <p>&nbsp;</p>
-<h3>An interlude:&nbsp;The staging environment, the commit, and you</h3>
-<p>One of the most confusing parts when you're first learning git is the concept of the staging environment and how it relates to a commit.</p>
-<p>A&nbsp;<strong><a href="http://git-scm.com/docs/git-commit" target="_blank">commit</a>&nbsp;</strong>is a record of what files you have changed since the last time you made a commit.&nbsp;Essentially, you make changes to your repo (for example, adding a file or modifying one) and then tell git to put those files into a commit.</p>
-<p>Commits make up the essence of your project and allow you to go back to the state of a project at any point.</p>
-<p>So, how do you tell git which files to put into a commit? This is where the <a href="https://git-scm.com/book/en/v2/Getting-Started-Git-Basics" target="_blank"><strong>staging environment&nbsp;</strong>or&nbsp;<strong>index</strong></a> come in. As seen in Step 2, when you make&nbsp;changes to your repo, git notices that a file has changed but won't do anything with it (like adding it in a commit).</p>
-<p>To add a file to a commit, you first need to add it to the staging environment. To do this, you can use the&nbsp;<strong><span style="font-family: &#39;courier new&#39;, courier;"><a href="http://git-scm.com/docs/git-add" target="_blank">git add</a> &lt;filename&gt;</span>&nbsp;</strong>command (see Step 3 below).</p>
-<p>Once you've used the git add command to add all the files you want to the staging environment, you can then tell git to package them into a commit using the <a href="http://git-scm.com/docs/git-commit"><strong><span style="font-family: &#39;courier new&#39;, courier;">git commit</span> </strong></a>command.<strong>&nbsp;</strong></p>
-<p>Note: The staging environment, also called&nbsp;'staging', is the new preferred term for this, but you can also see it referred to as the 'index'.</p>
+<h3>提示：准备环境、提交和用户</h3>
+<p>你第一次学校git时最困惑的部分之一是准备环境的概念以及它与提交的关系。</p>
+<p><strong><a href="http://git-scm.com/docs/git-commit" target="_blank">提交</a>&nbsp;</strong>是自上次提交以来更改了哪些文件的记录。实际上，您对repo进行了更改（例如，添加文件或修改文件），然后告诉git将这些文件放入提交。</p>
+<p>提交构成了项目的本质，并允许您在任何时候返回到项目的状态。</p>
+<p>那么，你如何告诉git将哪些文件放入提交中？ 这就是 <a href="https://git-scm.com/book/en/v2/Getting-Started-Git-Basics" target="_blank"><strong>准备环境&nbsp;</strong>或&nbsp;<strong>索引</strong></a>的位置. 如步骤2所示, 当你对repo进行更改时，git会注意到文件已更改但不会对其执行任何操作（例如在提交中添加它）。</p>
+<p>要将文件添加到提交，首先需要将其添加到准备环境。为此，你可以使用&nbsp;<strong><span style="font-family: &#39;courier new&#39;, courier;"><a href="http://git-scm.com/docs/git-add" target="_blank">git add</a> &lt;filename&gt;</span>&nbsp;</strong>命令 (请参阅下面的步骤3).</p>
+<p>一旦你使用git add命令将你想要的所有文件添加到准备环境，你就可以告诉git使用 <a href="http://git-scm.com/docs/git-commit"><strong><span style="font-family: &#39;courier new&#39;, courier;">git commit</span> </strong></a>命令将它们打包到一个提交中.<strong>&nbsp;</strong></p>
+<p>注意：暂存环境（也称为“暂存”）是新的首选术语，但你也可以将其称为“索引”.</p>
 <p>&nbsp;</p>
 <h3><a id="user-content-step-5-creating-a-commit" class="anchor" href="https://github.com/cubeton/git101/blob/master/TurtorialInfo/Tutorial.md#step-5-creating-a-commit" aria-hidden="true"></a>步骤3: 将文件添加到暂存环境</h3>
 <p><span>Add a file to the staging environment using the <strong><span style="font-family: &#39;courier new&#39;, courier;">git add</span></strong> command.&nbsp;</span></p>
